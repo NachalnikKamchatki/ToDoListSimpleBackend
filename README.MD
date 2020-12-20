@@ -1,14 +1,14 @@
-#TODO_LIST
+# TODO_LIST
 
 
 ## REST API Flask приложение с аутентификацией с помощью JSON Web Token
 
 
-###Использование
+### Использование
 Запустить сервер командой py manage.py runserver
 
 
-###Маршруты
+### Маршруты
 - /todo/api/v1.0/register - Регистрация нового пользователя. В теле запроса указать 
   json {"name": "Your-Name", "password": "your-password"}. В ответ придет {'message': 'registered successfully'}
   
