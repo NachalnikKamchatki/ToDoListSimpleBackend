@@ -88,13 +88,13 @@ def login_user():
     )
 
 
-@app.route('/todo/api/v1.0/users', methods=['GET'])
-def get_users():
-    users = User.query.all()
-    res = []
-    for user in users:
-        res.append({'id': user.id, 'name': user.name, 'password': user.password})
-    return make_response(jsonify({"users": res}), 200)
+# @app.route('/todo/api/v1.0/users', methods=['GET'])
+# def get_users():
+#     users = User.query.all()
+#     res = []
+#     for user in users:
+#         res.append({'id': user.id, 'name': user.name, 'password': user.password})
+#     return make_response(jsonify({"users": res}), 200)
 
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
